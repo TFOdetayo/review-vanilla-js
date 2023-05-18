@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: azure;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.img-container img {
+    width: 150px;
+    height: 140px;
+    /* border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px; */
+    border-radius: 100%;
+    border-right: 10px solid rgb(105, 179, 208);
+    position: relative;
+    margin: 10px 0 5px 0;
+}
+
+/* .img-container::after {
+    position: absolute;
+    left: 45%;
+    top: 31%;
+    content: '"';
+    background-color: rgb(105, 179, 208);
+    height: 35px;
+    width: 35px;
+    font-size: 50px;
+    text-align: center;
+    color: #fffff0;
+    border-radius: 50%;
+} */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7% 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.title h2 {
+    text-transform: capitalize;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-bottom: 7px;
+}
+
+.title .underline {
+    position: absolute;
+    left: 48%;
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: rgb(105, 179, 208);
+}
+
+article.review {
+    margin-top: 45px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    width: 50%;
+    height: 40%;
+    margin: 45px auto 0 auto;
+    padding: 20px;
+}
+
+#author {
+    text-transform: capitalize;
+    font-size: 14px;
+    padding: 8px 0 3px 0;
+}
+
+#job {
+    text-transform: uppercase;
+    font-size: 11px;
+    color: rgb(105, 179, 208);
+    font-weight: 100;
+    letter-spacing: 0;
+}
+
+#info {
+    padding: 10px 15px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.button-container {
+    width: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.button-container img {
+    width: 10px;
+}
+
+.prev-btn, .next-btn {
+    border:  none;
+}
+
+.random-btn {
+    margin: 10px 0 7px 0;
+    padding: 3px;
+    color: rgb(105, 179, 208);
+    border: 1px solid rgb(105, 179, 208);
+    border-radius: 5px;
+}
+
+@media(max-width: 700px) {
+    .img-container img {
+        display: none;
+    }
+
+    #author {
+        padding: 3px 0 5px 0;
+    }
+
+    #info {
+        padding: 7px 5px;
+    }
+
+    article.review {
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .img-container::after {
+        visibility: hidden;
+    }
+}
+/* As I am like this, I'm so tired, but the joy of the Lord is my strenght... */
